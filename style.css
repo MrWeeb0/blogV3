@@ -35,15 +35,22 @@ body {
 .navbar__logo {
   width: 90px;
   height: 90px;
-  background: var(--color-logo);
-  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  font-size: 1.25rem;
   margin-right: 40px;
+  background: transparent; /* Remove background color */
+  overflow: hidden;        /* Ensure image stays round */
+  padding: 0;
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Make image fill the circle */
+  border-radius: 50%;
+  display: block;
 }
 
 .navbar__links {
