@@ -184,8 +184,8 @@ body {
 }
 
 .cta-image img {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -308,7 +308,7 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 0 15px 0;
+  padding: 24px 0 10px 0;
   z-index: 2;
   background: #E4E2E2;
   position: sticky;
@@ -464,62 +464,99 @@ footer p {
   border-radius: 4px;
 }
 
-/* --- Responsive --- */
+
+/* --- Features Section --- */
+.features-section {
+  max-width: 1300px;
+  margin: 60px auto 100px auto;
+  padding: 0 32px;
+}
+
+.features-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 56px;
+  margin-bottom: 48px;
+}
+
+.features-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.features-col-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.features-col-img img {
+  width: 100%;
+  max-width: 380px;
+  height: 240px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.features-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.features-introduction {
+  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.features-link a {
+  display: inline-block;
+  background: var(--color-link-active);
+  color: var(--color-link-active-text);
+  padding: 12px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.features-link a:hover {
+  background: var(--color-highlight);
+  color: var(--color-link-text);
+}
+
+.features-divider {
+  border: none;
+  border-top: 2px solid #e5e7eb;
+  margin: 18px 0 32px 0;
+}
+
+.features-row {
+  flex-direction: row;
+}
+
+
+/* Responsive for features */
 @media (max-width: 900px) {
-  .carousel, .carousel-slide {
-    height: 40vh;
-    min-height: 200px;
+  .features-section {
+    max-width: 98vw;
+    padding: 0 4vw;
   }
-  .cta-section {
-    flex-direction: column;
-    padding: 40px 12px;
-    gap: 40px;
+  .features-row {
+    flex-direction: column !important;
+    gap: 16px;
+    margin-bottom: 24px;
   }
-  .cta-image img {
-    width: 120px;
+  .features-col-img img {
+    max-width: 98vw;
     height: 120px;
-    margin-right: 0;
-  }
-  .cta-content {
-    gap: 24px;
-  }
-  .cta-content h2 {
-    font-size: 1.5rem;
-  }
-  .cta-content p {
-    font-size: 1rem;
-  }
-  .cta-btn {
-    font-size: 1rem;
-    padding: 12px 32px;
-  }
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .footer-contact {
-    min-width: 0;
-    width: 90vw;
-    padding: 16px 10px;
-    font-size: 1rem;
-  }
-  .footer-logo {
-    width: 60px;
-    height: 60px;
-    font-size: 1rem;
-  }
-  .footer-bar {
-    width: 70%;
-    height: 6px;
-  }
-  .aboutus-layout,
-  .aboutus-contact-layout {
-    flex-direction: column;
-    gap: 24px;
-  }
-  .aboutus-contact-bar-wrap {
-    width: 90%;
   }
 }
 
@@ -549,4 +586,58 @@ footer p {
   .cta-content h2 {
     font-size: 1.3rem;
   }
+}
+.navbar-article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0 10px 0;
+  z-index: 2;
+  background: #E4E2E2;
+  position: sticky;
+  top: 0;
+  border: solid 3px #1F2937;
+}
+#mann{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.title1{
+    position: static;     
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto 20px auto;
+}
+
+.container-1{
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    align-items: flex-start;
+    text-align: left;
+    word-break: break-all;
+    max-width: 1100px;
+}
+.post-1 blockquote {
+    background: rgb(234, 239, 239);
+    border-left: 5px solid rgb(51, 52, 70);
+    margin: 16px 0;
+    padding: 12px 18px;
+    font-style: italic;
+    color: #333;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 8px #0001;
+}
+#more{
+  text-decoration: underline;
 }
